@@ -1,0 +1,16 @@
+<% layout("./layouts/layout.eta") %>
+
+<h1>Learning application</h1>
+
+<p>This is an application for repeated practice of learned content. You can see topics and add and delete questions and answer options under Topics or take a quiz from a topic under Quiz.</p>
+
+<h2>Statistics</h2>
+
+<ul>
+  <li>Topics: <%= it.topics.count %></li>
+  <li>Questions: <%= it.questions.count %></li>
+  <li>Answers: <%= it.answers.count %></li>
+</ul><br/>
+
+<a href="/auth/register">Register</a>
+<a href="/auth/login">Login</a>

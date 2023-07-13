@@ -1,0 +1,9 @@
+<% layout("./layouts/layout.eta") %>
+
+  <% it.options.forEach(option => { %>
+    <% if (option.is_correct) { %>
+      <h3>Incorrect! The correct option was <%= option.option_text %>.</h3>
+    <% } %>
+  <% }); %>
+
+<a href="/quiz/<%= it.topic.id %>">Next question</a>
